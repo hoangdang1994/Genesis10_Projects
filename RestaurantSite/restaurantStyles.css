@@ -1,0 +1,73 @@
+header {
+	text-align: center;
+	background-color: #044F67;
+	padding-bottom: 1px;
+}
+
+footer {
+	margin-top: 100px;
+	text-align: center;
+	background-color: #044F67;
+	padding-bottom: 1px;
+}
+
+#jumpotronTitle {
+	background-color: #044F67;
+}
+
+nav {
+	background-color: #044F67;
+	padding-top: 1px;
+	margin-bottom: 20px;
+}
+hr {
+	border: solid;
+	border-width: 1px;
+}
+
+body {
+	background-color: #89C4F4;
+}
+
+a:link {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+}
+
+/* restaurant name style*/
+.restaurantName {
+	font-family: 'Calistoga', cursive;
+	font-size: 70px;
+}  
+.carousel {
+	padding-top: 15px;
+	margin-bottom: 40px;
+}
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    /*background-size: cover;*/
+}
+
+#bgColor {
+	background-color: blue;
+}
+
+.warning{
+	text-align: center;
+	color: red;
+}
+
+

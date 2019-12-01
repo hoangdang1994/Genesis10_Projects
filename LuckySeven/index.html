@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Lucky Sevens</title>
+		<!-- Bootstrap CDN copied from: https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<style>
+			input{
+				border: 2px solid #0d1f2d;
+			    width: 100px;
+			    padding: 4px 4px;
+			    margin: 8px 0;
+			    box-sizing: border-box;
+			    font-size: 1.2em;
+			}
+			h1 {
+				font-family: 'Calistoga', cursive;
+				font-size: 70px;
+			} 
+			h3 {
+				font-family: 'Calistoga', cursive;
+			}
+			input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+				-webkit-appearance: none; 
+			  	margin: 0; 
+			}
+			hr {
+				border: 1.5px solid black;
+			}
+			tbody {
+				border: 2px solid black;
+				font-family: 'Calistoga', cursive;
+				font-size: 1.2em;
+				font-weight: bold;
+				padding: 8px;
+				margin: 8px;
+				align-self: center;
+			}
+			td {
+				border-right:2px solid black;
+			}
+			table.center {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			button {
+				margin: 15px;
+
+				font-family: 'Calistoga', cursive;
+			}
+		</style>
+		<!-- Lucky Sevens script -->
+		<script type="text/javascript" src="scripts.js"></script>
+	</head>
+	<body>	
+		<!-- Lucky Sevens Layout Before play game-->
+		<div class="container" style="padding-top: 100px;">
+			<div class="row justify-content-center align-items-center">
+				<div class="col">
+					<div class="row">
+						<div class="col-12 align-self-center" style="text-align: center">
+							<label><h1>Lucky Sevens</h1></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 align-self-center" style="text-align: right">
+							<h3>Starting Bet:</h3>
+						</div>
+						<div class="col-6 align-self-center">
+							<input type="number" name="bet" id="betMoney" placeholder="$">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 align-self-center" style="text-align: center">
+							<!-- <button class="btn btn-primary" id="play" onclick="validateBet()">
+								<h3 class="playButton" id="playButton">Play</h3>
+							</button> -->
+
+							<button type="button" class="btn btn-primary" id="toggle" onclick="validateBet()">Play</button>
+
+						</div>
+					</div>
+
+					<div class="row" id="result" style="display:none;">
+						<hr>
+						<h1 style="text-align: center; padding: 15px;">Results</h1>
+						<div class="col-12">
+							<table class="table table-striped">
+								<tbody>
+									<tr>
+								    	<td>Starting Bet</td>
+								    	<td id="startingBet"></td>
+									</tr>
+									<tr>
+								    	<td>Total Rolls Before Going Broke</td>
+								    	<td id="totalRolls"></td>
+									</tr>
+									<tr>
+								    	<td>Highest Amount Won</td>
+								    	<td id="highestWinAmount"></td>
+									</tr>
+									<tr>
+								    	<td>Roll Count at Highest Amount Won</td>
+								    	<td id="highestWinCount"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
